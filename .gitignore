@@ -15,7 +15,9 @@ config/shopify.yml
 npm-debug.log
 .env
 .env.*
-
+package-lock.json
+assets/styles.css
+config/settings_data.json
 
 # Compiled source #
 ###################
