@@ -17,6 +17,7 @@ npm-debug.log
 .env.*
 package-lock.json
 assets/styles.css
+config/settings_data.json
 
 # Compiled source #
 ###################
