@@ -1,10 +1,12 @@
 const gulp = require('gulp'),
-      sass = require('gulp-sass')(require('sass'));
+      sass = require('gulp-sass')(require('sass'))
+      concat = require('gulp-concat');
 
 gulp.task('scss', () => {
   return gulp
-    .src('./src/scss/styles.scss')
+    .src('./src/**/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(concat('styles.css'))
     .pipe(gulp.dest('assets'));
 });
 
